@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GameWith 3桁数字非表示",
+  "version": "1.0.0",
+  "description": "GameWith ポケポケトレード掲示板の3桁数字要素を非表示にします。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gamewith.jp/pokemon-tcg-pocket/card-trades*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
